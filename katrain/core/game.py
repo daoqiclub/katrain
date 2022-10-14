@@ -149,7 +149,7 @@ class BaseGame:
 
         def neighbours(moves):
             return {
-                self.board[(m.coords[1] + dy) % board_size_y][(m.coords[0] + dx) % board_size_x]
+                self.board[(m.coords[1] + dy) % board_size_y][(m.coords[0] + dx) % board_size_x] #daoqi
                 for m in moves
                 for dy, dx in [(-1, 0), (1, 0), (0, -1), (0, 1)]
             }
